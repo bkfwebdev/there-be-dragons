@@ -7,7 +7,7 @@ get randomTraits () {
         )}
     }
 
-    // index.js (old content)
+     // index.js (old content)
 
     const Dragon = require ("./dragon.js");
 const bahamut = new Dragon({
@@ -27,5 +27,23 @@ setTimeout(()=>{
 console.log("bahamut",bahamut);
 console.log("shenlong",shenlong);
 console.log("tiamat",tiamat);
+
+// generation test
+
+const generation = new Generation();
+
+console.log("generation" , generation);
+
+const mordor = generation.newDragon();
+
+console.log("mordor", mordor);
+
+setTimeout(()=>{
+    const brunhyldyr = generation.newDragon();
+    console.log("brunhyldyr",brunhyldyr);
+},15000);
+
+
+
 
     

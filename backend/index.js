@@ -1,14 +1,14 @@
 const Generation = require ("./generation");
 
-const generation = new Generation();
+const GenerationEngine = require("./generationengine.js");
+const engine = new GenerationEngine;
 
-console.log("generation" , generation);
 
-const mordor = generation.newDragon();
-
-console.log("mordor", mordor);
+engine.start();
 
 setTimeout(()=>{
-    const brunhyldyr = generation.newDragon();
-    console.log("brunhyldyr",brunhyldyr);
-},15000);
+    engine.stop();
+},20000);
+
+
+
